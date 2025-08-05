@@ -450,7 +450,6 @@ const products = [
       { color: "Azul", price: 6499 },
     ],
   },
-
   // Jaquetas & Moletons
   {
     name: "Corta Vento",
