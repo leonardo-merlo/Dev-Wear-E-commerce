@@ -9,7 +9,7 @@
     "lint": "next lint",
     "drizzle": "npx drizzle-kit push",
     "drizzle:studio": "npx drizzle-kit studio",
-    "drizzle:seed": "npx tsx --env-file=. src/db/seed.ts"
+    "drizzle:seed": "npx tsx src/db/seed.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",
