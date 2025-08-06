@@ -603,7 +603,7 @@ async function main() {
           name: variantData.color,
           productId: productId,
           color: variantData.color,
-          imageUrl: variantImages[0] || "", // <-- CORREÇÃO: pegar só a primeira URL, não o array todo
+          imageUrl: variantImages[0] || "", 
           priceInCents: variantData.price,
           slug: generateSlug(`${productData.name}-${variantData.color}`),
         });
