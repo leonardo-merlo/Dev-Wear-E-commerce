@@ -15,8 +15,9 @@ const CategorySelector = ({ categories }: CategorySelectorProps) => {
         {categories.map((category) => (
           <Button
             key={category.id}
+            asChild
             variant="ghost"
-            className="rounded-full bg-white text-xs font-semibold"
+            className="rounded-full bg-white text-xs font-semibold cursor-pointer"
           >
             <Link href={`/category/${category.slug}`}>{category.name}</Link>
           </Button>

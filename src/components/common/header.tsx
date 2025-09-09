@@ -20,12 +20,19 @@ import { Cart } from "./cart";
 export const Header = () => {
   const { data: session } = authClient.useSession();
   return (
-    <header className="flex items-center justify-between p-5">
-      <Link href="/">
-        <Image src="/logo.svg" alt="BEWEAR" width={100} height={26.14} />
-      </Link>
+    <header
+      className="w-full"
+      style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" }}
+    >
+      <div className="mx-auto max-w-screen-xl px-3 md:px-4 flex items-center justify-between py-5 mb-4 md:mb-6">
+        <div className="flex items-center gap-4">
+        <Link href="/">
+          <Image src="/avatar-leo.png" alt="BEWEAR" width={50} height={26.14} />
+        </Link>
+        <h1 className="text-2xl font-bold text-white">DEV-WEAR</h1>
+        </div>
 
-      <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3">
         <Sheet>
           <SheetTrigger asChild>
             <Button variant="outline" size="icon">
@@ -81,6 +88,7 @@ export const Header = () => {
           </SheetContent>
         </Sheet>
         <Cart />
+        </div>
       </div>
     </header>
   );
