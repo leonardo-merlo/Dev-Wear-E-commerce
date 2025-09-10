@@ -19,9 +19,13 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Dev-Wear",
   description: "Ecommerce developed by Leonardo Merlo",
-  icons: {
-    icon: "../../public/avatar-leo.png",
-  },
+  icons: [
+    {
+      rel: "icon",
+      url: "/avatar-leo.png",
+      type: "image/png",
+    },
+  ],
 };
 
 export default function RootLayout({
