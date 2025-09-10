@@ -26,7 +26,7 @@ const Home = async () => {
   return (
     <>
       <Head>
-        <title>DEV-WEAR</title>
+        <title>DEVWEAR</title>
         <meta name="description" content="Dev-Wear" />
       </Head>
       <Header />
@@ -40,7 +40,7 @@ const Home = async () => {
                 height={0}
                 width={0}
                 sizes="(min-width: 768px) 50vw, 100vw"
-                className="w-full h-full object-contain"
+                className="h-full w-full object-contain"
               />
             </div>
             <div className="w-full overflow-hidden rounded-lg md:h-96 lg:h-[28rem]">
@@ -50,20 +50,18 @@ const Home = async () => {
                 height={0}
                 width={0}
                 sizes="(min-width: 768px) 50vw, 100vw"
-                className="w-full h-full object-contain"
+                className="h-full w-full object-contain"
               />
             </div>
           </div>
 
-        <div>
-          <CategorySelector categories={categories} />
-        </div>
+          <div>
+            <CategorySelector categories={categories} />
+          </div>
 
-        <ProductList products={products} title="Mais vendidos" />
+          <ProductList products={products} title="Mais vendidos" />
 
-        
-
-        <ProductList products={newlyCreatedProducts} title="Novos produtos" />
+          <ProductList products={newlyCreatedProducts} title="Novos produtos" />
         </div>
       </div>
       <Footer />
